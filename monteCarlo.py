@@ -21,8 +21,6 @@ last_price = closing_df.iloc[-1].iloc[-1]
 ##print(closing_df)
 tech_rets = closing_df.pct_change()
 rets = tech_rets.dropna()
-AAPL['Daily Return'] = AAPL['Adj Close'].pct_change()
-##NVDA['Daily Return'] = NVDA['Adj Close'].pct_change()
 days = 365
 dt = 1/days
 mu = rets.mean()
